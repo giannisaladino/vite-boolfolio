@@ -1,15 +1,17 @@
 <template>
-    <!-- <AppMain /> -->
-     <ProjectCard />
+    <AppHeader />
+    <ProjectCard />
 </template>
 
 <script>
 import AppMain from './components/AppMain.vue';
+import AppHeader from './components/AppHeader.vue';
 import ProjectCard from './components/ProjectCard.vue';
 export default {
   components: {
     AppMain,
-    ProjectCard
+    ProjectCard,
+    AppHeader
   },
   data() {
     return {
@@ -21,6 +23,5 @@ export default {
 </script>
 
 <style lang="scss">
-// @use "./style/general.scss";
 @use "bootstrap"
 </style>
