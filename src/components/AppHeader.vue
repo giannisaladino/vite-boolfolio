@@ -10,7 +10,7 @@
             PROGETTI
         </RouterLink>
         <RouterLink :class="$route.fullPath === '/contact' ? 'text-primary' : ''" :to="{ name: 'contact' }">
-            CONTATTI
+            CONTATTACI
         </RouterLink>
     </nav>
 </template>
