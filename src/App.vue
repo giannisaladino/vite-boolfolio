@@ -1,6 +1,18 @@
-<template>
+<!-- <template>
     <AppHeader />
     <ProjectCard />
+</template> -->
+
+<template>
+  <section class="bg-light">
+    <header>
+      <AppHeader />
+    </header>
+  </section>
+
+  <main>
+    <RouterView />
+  </main>
 </template>
 
 <script>
