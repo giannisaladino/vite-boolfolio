@@ -11,9 +11,9 @@ import ContactView from './pages/ContactView.vue';
 const router = createRouter({
     history: createWebHistory(),
     routes: [
-        {path: '/', component: HomeView},
-        {path: '/portfolio', component: PortfolioView},
-        {path: '/contact', component: ContactView},
+        {path: '/', name: 'home', component: HomeView},
+        {path: '/portfolio', name: 'portfolio', component: PortfolioView},
+        {path: '/contact', name: 'contact', component: ContactView},
     ],
 })
 
