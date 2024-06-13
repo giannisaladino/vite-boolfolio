@@ -1,7 +1,7 @@
 <template>
-    <div class="container text-center py-5">
+    <div class="container py-5 d-flex justify-content-center align-items-center flex-column">
         <h1>Questa è la home page</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque iste obcaecati error ipsam natus? Velit odit ducimus saepe optio vero?</p>
+        <p class="fs-4">in allestimento...</p>
     </div>
 </template>
 
@@ -16,5 +16,7 @@
 </script>
 
 <style lang="scss" scoped>
-
+.container {
+    height: 600px;
+}
 </style>

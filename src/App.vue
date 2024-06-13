@@ -1,10 +1,6 @@
-<!-- <template>
-    <AppHeader />
-    <ProjectCard />
-</template> -->
 
 <template>
-  <section class="bg-light">
+  <section class="bg-dark text-white">
     <header>
       <AppHeader />
     </header>
@@ -16,12 +12,10 @@
 </template>
 
 <script>
-import AppMain from './components/AppMain.vue';
 import AppHeader from './components/AppHeader.vue';
 import ProjectCard from './components/ProjectCard.vue';
 export default {
-  components: {
-    AppMain,
+  components: { 
     ProjectCard,
     AppHeader
   },
