@@ -22,13 +22,18 @@ export default {
 
 <template>
     <div class="container mt-5">
-        <div class="row gy-3"> 
+        <div class="row gy-3">
             <div v-for="project in projects" :key="project.id" class="col-3">
                 <div class="card text-center">
                     <div class="card-body">
                         <h5 class="card-title text-primary">{{ project.name }}</h5>
                         <p class="card-text">{{ project.slug }}</p>
-                        <a href="#" class="btn btn-primary">{{ project.date }}</a>
+                    </div>
+                    <div class="mb-2">
+                        <RouterLink class="btn btn-primary"
+                            :to="{ name: 'projects.show', params: { slug: project.slug } }">
+                            INFO
+                        </RouterLink>
                     </div>
                 </div>
             </div>
@@ -36,5 +41,4 @@ export default {
     </div>
 </template>
 
-<style lang="scss">
-</style>
+<style lang="scss"></style>
